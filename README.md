@@ -15,26 +15,25 @@
 
 ### 📚 제공 프롬프트
 
-| 프롬프트 이름 | 설명 | 문서 | 상태 |
-|-------------|------|------|------|
-| AI CAPTCHA Assistant | 다양한 종류의 CAPTCHA 및 시각적 문제 해결 | [문서](./docs/CAPTCHA.md) | ✅ 사용 가능 |
-
-### 🚀 사용 방법
-각 프롬프트는 독립적인 문서와 함께 제공되며, 다음과 같은 정보를 포함합니다:
-- 상세 사용 설명
-- 입/출력 형식
-- 예시 케이스
-- 제한사항
-
-자세한 내용은 각 프롬프트의 문서를 참고해 주세요.
+| 프롬프트 이름 | 설명 | 시스템 프롬프트 | 문서 |
+|-------------|------|-----------------|------|
+| AI CAPTCHA Assistant | CAPTCHA 및 시각적 문제 해결 | [보기](/prompts/captcha-assistant/system-prompt.md) | [문서](/docs/CAPTCHA.md) |
 
 ### 📂 프로젝트 구조
 ```
 prompts-for-anything/
 ├── docs/           # 상세 문서
 ├── images/         # 예시 이미지
-└── prompts/        # 프롬프트 파일
+└── prompts/        # 프롬프트 및 예시
+    └── prompt-name/
+        ├── system-prompt.md  # 시스템 프롬프트
+        └── examples.json     # 테스트 예시
 ```
+
+### 🚀 사용 방법
+1. 원하는 프롬프트의 문서 확인
+2. system-prompt.md의 내용을 GPT-4에 적용
+3. examples.json의 예시를 참고하여 사용
 
 ### 🤝 기여하기
 프로젝트에 기여하고 싶으시다면 언제든 PR을 보내주세요!
@@ -51,26 +50,25 @@ This project aims to share the useful prompts that I personally wrote and valida
 
 ### 📚 Available Prompts
 
-| Prompt Name | Description | Documentation | Status |
-|------------|-------------|---------------|---------|
-| AI CAPTCHA Assistant | Solve various types of CAPTCHA and visual challenges | [Docs](./docs/CAPTCHA.md) | ✅ Available |
-
-### 🚀 How to Use
-Each prompt comes with its own documentation including:
-- Detailed usage instructions
-- Input/Output formats
-- Example cases
-- Limitations
-
-Please refer to each prompt's documentation for detailed information.
+| Prompt Name | Description | System Prompt | Documentation |
+|------------|-------------|---------------|---------------|
+| AI CAPTCHA Assistant | Solve CAPTCHA and visual challenges | [View](/prompts/captcha-assistant/system-prompt.md) | [Docs](/docs/CAPTCHA.md) |
 
 ### 📂 Project Structure
 ```
 prompts-for-anything/
 ├── docs/           # Documentation
 ├── images/         # Example images
-└── prompts/        # Prompt files
+└── prompts/        # Prompts and examples
+    └── prompt-name/
+        ├── system-prompt.md  # System prompt
+        └── examples.json     # Test examples
 ```
+
+### 🚀 How to Use
+1. Check the documentation for desired prompt
+2. Apply system-prompt.md content to GPT-4
+3. Reference examples.json for usage
 
 ### 🤝 Contributing
 Feel free to send PR if you want to contribute to the project!
