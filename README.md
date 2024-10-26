@@ -15,6 +15,8 @@
 
 ### 📚 제공 프롬프트
 
+#### 🌟저는 모든 프롬프트를 Claude로 돌리기 때문에 ChatGPT로 돌렸을 때는 정확도가 떨어질수도 있습니다. 🌟
+
 | 프롬프트 이름 | 설명 | 시스템 프롬프트 | 문서 |
 |-------------|------|-----------------|------|
 | AI CAPTCHA Assistant | CAPTCHA 및 시각적 문제 해결 | [보기](/prompts/captcha-assistant/system-prompt.md) | [문서](/docs/CAPTCHA.md) |
