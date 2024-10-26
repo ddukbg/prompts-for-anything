@@ -1,0 +1,115 @@
+{
+    "examples": [
+        {
+            "type": "strikethrough_captcha",
+            "image_path": "../images/captcha/strikethrough.png",
+            "description": "Strikethrough number CAPTCHA",
+            "input": {
+                "image": "[base64_image]",
+                "options": {
+                    "message": "Number CAPTCHA with strikethrough line"
+                }
+            },
+            "output": {
+                "type": "strikethrough_captcha",
+                "answer": "327896",
+                "confidence": 0.98,
+                "details": {
+                    "language": "none",
+                    "contains_numbers": true,
+                    "contains_letters": false,
+                    "requires_calculation": false
+                }
+            }
+        },
+        {
+            "type": "receipt_question",
+            "image_path": "../images/captcha/receipt-question.png",
+            "description": "Extract product name from receipt",
+            "input": {
+                "image": "[base64_image]",
+                "options": {
+                    "message": "This is a receipt image but needs to be solved as a question challenge. Contains Korean text.",
+                    "language": "ko"
+                }
+            },
+            "output": {
+                "type": "receipt_question",
+                "answer": "생일상용",
+                "confidence": 0.95,
+                "details": {
+                    "language": "ko",
+                    "contains_numbers": true,
+                    "contains_letters": true,
+                    "requires_calculation": false
+                }
+            }
+        },
+        {
+            "type": "receipt_calculation",
+            "image_path": "../images/captcha/receipt-calc.png",
+            "description": "Calculate total amount from receipt",
+            "input": {
+                "image": "[base64_image]",
+                "options": {
+                    "message": "Calculate the total amount from the receipt"
+                }
+            },
+            "output": {
+                "type": "receipt_calculation",
+                "answer": "20000",
+                "confidence": 0.99,
+                "details": {
+                    "language": "ko",
+                    "contains_numbers": true,
+                    "contains_letters": false,
+                    "requires_calculation": true
+                }
+            }
+        },
+        {
+            "type": "math_captcha",
+            "image_path": "../images/captcha/math.png",
+            "description": "Solve mathematical operation",
+            "input": {
+                "image": "[base64_image]",
+                "options": {
+                    "message": "Solve the math equation"
+                }
+            },
+            "output": {
+                "type": "math_captcha",
+                "answer": "23",
+                "confidence": 0.96,
+                "details": {
+                    "language": "en",
+                    "contains_numbers": true,
+                    "contains_letters": false,
+                    "requires_calculation": true
+                }
+            }
+        },
+        {
+            "type": "recaptcha_text",
+            "image_path": "../images/captcha/recaptcha.png",
+            "description": "Recognize distorted words in reCAPTCHA",
+            "input": {
+                "image": "[base64_image]",
+                "options": {
+                    "message": "Read distorted text from reCAPTCHA"
+                }
+            },
+            "output": {
+                "type": "recaptcha_text",
+                "answer": "arch dsjcbka",
+                "confidence": 0.97,
+                "details": {
+                    "language": "en",
+                    "contains_numbers": false,
+                    "contains_letters": true,
+                    "requires_calculation": false
+                }
+            }
+        }
+    ]
+}
