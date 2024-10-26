@@ -56,11 +56,11 @@ AI CAPTCHA Assistant는 다양한 종류의 시각적 문제를 해결하는 프
 
 | 유형 | 예시 이미지 | 설명 | 예상 응답 |
 |------|------------|------|-----------|
-| 취소선 CAPTCHA | ![Strikethrough CAPTCHA](../images/captcha/strikethrough.png) | 취소선이 그어진 숫자 인식 | `{"type": "strikethrough_captcha", "answer": "327896", "confidence": 0.98}` |
-| 문서 질문형 | ![Receipt Question](../images/captcha/receipt-question.png) | 영수증에서 특정 정보 추출 | `{"type": "receipt_question", "answer": "생일상용", "confidence": 0.95}` |
-| 영수증 계산 | ![Receipt Calculation](../images/captcha/receipt-calc.png) | 영수증 금액 계산 | `{"type": "receipt_calculation", "answer": "20000", "confidence": 0.99}` |
-| 수학 CAPTCHA | ![Math CAPTCHA](../images/captcha/math.png) | 수학 연산 해결 | `{"type": "math_captcha", "answer": "23", "confidence": 0.96}` |
-| reCAPTCHA | ![reCAPTCHA](../images/captcha/recaptcha.png) | 왜곡된 단어 인식 | `{"type": "recaptcha_text", "answer": "arch dsjcbka", "confidence": 0.97}` |
+| 취소선 CAPTCHA | ![Strikethrough CAPTCHA](../images/captcha/strikethrough.PNG) | 취소선이 그어진 숫자 인식 | `{"type": "strikethrough_captcha", "answer": "327896", "confidence": 0.98}` |
+| 문서 질문형 | ![Receipt Question](../images/captcha/receipt-question.PNG) | 영수증에서 특정 정보 추출 | `{"type": "receipt_question", "answer": "생일상용", "confidence": 0.95}` |
+| 영수증 계산 | ![Receipt Calculation](../images/captcha/receipt-calc.PNG) | 영수증 금액 계산 | `{"type": "receipt_calculation", "answer": "20000", "confidence": 0.99}` |
+| 수학 CAPTCHA | ![Math CAPTCHA](../images/captcha/math.PNG) | 수학 연산 해결 | `{"type": "math_captcha", "answer": "23", "confidence": 0.96}` |
+| reCAPTCHA | ![reCAPTCHA](../images/captcha/recaptcha.PNG) | 왜곡된 단어 인식 | `{"type": "recaptcha_text", "answer": "arch dsjcbka", "confidence": 0.97}` |
 
 ### 🔍 성능 최적화 팁
 1. 이미지 품질 최적화
@@ -139,11 +139,11 @@ AI CAPTCHA Assistant is a prompt designed to solve various types of visual chall
 
 | Type | Example Image | Description | Expected Response |
 |------|--------------|-------------|-------------------|
-| Strikethrough CAPTCHA | ![Strikethrough CAPTCHA](../images/captcha/strikethrough.png) | Recognize numbers with strikethrough | `{"type": "strikethrough_captcha", "answer": "327896", "confidence": 0.98}` |
-| Document Question | ![Receipt Question](../images/captcha/receipt-question.png) | Extract specific information from receipt | `{"type": "receipt_question", "answer": "생일상용", "confidence": 0.95}` |
-| Receipt Calculation | ![Receipt Calculation](../images/captcha/receipt-calc.png) | Calculate receipt amounts | `{"type": "receipt_calculation", "answer": "20000", "confidence": 0.99}` |
-| Math CAPTCHA | ![Math CAPTCHA](../images/captcha/math.png) | Solve mathematical operation | `{"type": "math_captcha", "answer": "23", "confidence": 0.96}` |
-| reCAPTCHA | ![reCAPTCHA](../images/captcha/recaptcha.png) | Recognize distorted words | `{"type": "recaptcha_text", "answer": "arch dsjcbka", "confidence": 0.97}` |
+| Strikethrough CAPTCHA | ![Strikethrough CAPTCHA](../images/captcha/strikethrough.PNG) | Recognize numbers with strikethrough | `{"type": "strikethrough_captcha", "answer": "327896", "confidence": 0.98}` |
+| Document Question | ![Receipt Question](../images/captcha/receipt-question.PNG) | Extract specific information from receipt | `{"type": "receipt_question", "answer": "생일상용", "confidence": 0.95}` |
+| Receipt Calculation | ![Receipt Calculation](../images/captcha/receipt-calc.PNG) | Calculate receipt amounts | `{"type": "receipt_calculation", "answer": "20000", "confidence": 0.99}` |
+| Math CAPTCHA | ![Math CAPTCHA](../images/captcha/math.PNG) | Solve mathematical operation | `{"type": "math_captcha", "answer": "23", "confidence": 0.96}` |
+| reCAPTCHA | ![reCAPTCHA](../images/captcha/recaptcha.PNG) | Recognize distorted words | `{"type": "recaptcha_text", "answer": "arch dsjcbka", "confidence": 0.97}` |
 
 ### 🔍 Performance Optimization Tips
 1. Image Quality Optimization
