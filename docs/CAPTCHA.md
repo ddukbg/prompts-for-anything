@@ -18,7 +18,7 @@ AI CAPTCHA Assistant는 다양한 종류의 시각적 문제를 해결하는 프
 ### 💻 사용 방법
 
 1. 시스템 프롬프트 적용
-   - [시스템 프롬프트](/prompts/captcha-assistant/system-prompt.md)를 GPT-4에 적용
+   - [시스템 프롬프트](/prompts/captcha-assistant/system-prompt.md)를 GPT-4(타 LLM 가능)에 적용
    - 프롬프트 적용 후에는 이미지와 함께 요청 전송
 
 2. 이미지 준비
@@ -77,6 +77,12 @@ AI CAPTCHA Assistant는 다양한 종류의 시각적 문제를 해결하는 프
    - confidence 점수가 0.9 미만인 경우 재시도 권장
    - 복잡한 문제는 여러 번 시도하여 결과 비교
 
+### 💡 성능 개선 가능성
+신뢰도(confidence)가 낮거나 틀린 결과를 보이는 경우, 해당 이미지와 특이점을 RAG(Retrieval-Augmented Generation) 또는 사전 지식 데이터베이스에 저장하여 활용할 수 있습니다. 
+
+이러한 방식으로 유사한 케이스 발생 시 오답률을 낮추고 신뢰도를 향상시킬 수 있습니다.
+
+
 ### ⚠️ 제한사항
 - 이미지 품질이 매우 낮은 경우 인식률 저하
 - 복잡한 수식이나 기호는 인식이 어려울 수 있음
@@ -101,7 +107,7 @@ AI CAPTCHA Assistant is a prompt designed to solve various types of visual chall
 ### 💻 How to Use
 
 1. Apply System Prompt
-   - Apply [system prompt](/prompts/captcha-assistant/system-prompt.md) to GPT-4
+   - Apply [system prompt](/prompts/captcha-assistant/system-prompt.md) Applies to GPT-4 (other LLMs available)
    - Send requests with images after prompt application
 
 2. Image Preparation
@@ -159,6 +165,9 @@ AI CAPTCHA Assistant is a prompt designed to solve various types of visual chall
 3. Response Handling
    - Retry recommended if confidence score is below 0.9
    - Compare results of multiple attempts for complex problems
+  
+### 💡 Performance Improvement Possibility
+When encountering low confidence or incorrect results, the images and their peculiarities can be stored in a RAG (Retrieval-Augmented Generation) or prior knowledge database. This approach can help reduce error rates and improve confidence scores when similar cases occur.
 
 ### ⚠️ Limitations
 - Recognition rate decreases with very low image quality
